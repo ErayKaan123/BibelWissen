@@ -1,0 +1,49 @@
+﻿@page "/"
+@inject ThemeManager ThemeManager
+<PageTitle>Home</PageTitle>
+
+<MudGrid Justify="Justify.Center">
+    <MudItem lg="4">
+        <MudText Align="Align.Center" Class="font-semibold text-6xl">
+            Start building your next Projects with MudWind
+        </MudText>
+
+        <MudText Align="Align.Center" Class="mx-24 mt-8 mud-text-secondary">
+            Whether you're a experienced developer or just starting out, our MudWind Template simplifies the process of building beautiful, responsive web applications.
+        </MudText>
+
+        <MudStack Class="mt-4" Row="true" Justify="Justify.Center">
+            <MudAvatarGroup Max="5" Spacing="3">
+                <MudAvatar Color="Color.Primary">M</MudAvatar>
+                <MudAvatar Color="Color.Secondary">G</MudAvatar>
+                <MudAvatar Color="Color.Tertiary">S</MudAvatar>
+                <MudAvatar Color="Color.Success">T</MudAvatar>
+            </MudAvatarGroup>
+        </MudStack>
+
+        <MudText Align="Align.Center" Class="mx-24 mt-4 font-semibold">
+            Join the community of 100+peoples who already use Tailframes!
+        </MudText>
+
+        <MudStack Justify="Justify.Center" Class="mt-6" Row="true">
+            <MudWindButton Class="py-2.5 rounded-lg" Variant="Variant.Filled" Color="Color.Primary">Explore Free Components</MudWindButton>
+            <MudWindButton StartIcon="@Icons.Custom.Brands.GitHub" Class="py-2.5 rounded-lg" Variant="Variant.Filled" Color="Color.Secondary">Github</MudWindButton>
+        </MudStack>
+
+        <MudStack Spacing="10" Justify="Justify.Center" Row="true" Class="mt-6">
+            <MudStack Class="-z-20" Spacing="2" Row="true">
+                <MudIcon Color="Color.Inherit" Icon="@Icons.Custom.Brands.MudBlazor"></MudIcon>
+                <MudText Align="Align.Center" Class="font-semibold">
+                    MudBlazor
+                </MudText>
+            </MudStack>
+
+            <MudStack Class="-z-20" Spacing="2" Row="true">
+                <MudImage Src="tailwind-logo.png" Height="24" Width="24"></MudImage>
+                <MudText Align="Align.Center" Class="font-semibold">
+                    Tailwind CSS
+                </MudText>
+            </MudStack>
+        </MudStack>
+    </MudItem>
+</MudGrid>
