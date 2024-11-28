@@ -19,6 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MudWind.Components\MudWind.Components.csproj" />
       <ProjectReference Include="..\MudWind.Services\MudWind.Services.csproj" />
     </ItemGroup>
 
