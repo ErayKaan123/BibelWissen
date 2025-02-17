@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    container_name: MyWebsite  # Container-Name setzen
+    image: nginx:latest        # Das Nginx-Image nutzen
+    ports:
+      - "8080:80"              # Port-Mapping (Host:Container)
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html:ro  # Verzeichnis-Mapping
